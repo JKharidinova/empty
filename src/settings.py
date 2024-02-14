@@ -9,6 +9,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
+    'dum.apps.DumConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -51,9 +52,9 @@ DATABASES = {
     'default': {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
         "NAME": "dummy",
-        "USER": "postgresCont",
-        "PASSWORD": "pas123",
-        "HOST": "localhost",
+        "USER": "postgres",
+        "PASSWORD": "pass123",
+        "HOST": "0.0.0.0",
         "PORT": "5432",
     }
 }
